@@ -2,7 +2,7 @@ import React from "react";
 import background from "../../assets/backgrounds/blackBg.png"
 import Carrusel from "../../components/carrusel/Carrusel";
 import Foto from "../../components/foto/Foto";
-import DownloadButton from "../../components/downloadButton/downloadButton";
+import DownloadButton from "../../components/downloadButton/DownloadButton";
 import TitleScreen from "../../components/TitleScreen/TitleScreen";
 
 export default function AboutMe (){
