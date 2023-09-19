@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logoE from "../../assets/letraE.png";
+import logoE from "../../assets/LetraE.png";
 import styles from "./Header.css";
 import OptionsNavSup from "../../components/headerComponents/OptionsNavSup";
 import MenuSmallDevices from "../../components/headerComponents/MenuSmallDevices";
