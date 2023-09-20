@@ -9,7 +9,7 @@ import CV from "../../../public/EdwardVera.pdf";
 export default function AboutMe (){
  
     return(
-        <div className="bg-cover bg-center " style={{ backgroundImage: `url(${background})`,
+        <div id="AboutMe" className="bg-cover bg-center " style={{ backgroundImage: `url(${background})`,
         height:"100vh", width: "99vw"}}>
             <div class="text-center h-screen grid grid-rows-[20%,42%] sm:grid-rows-[20%,37%] md:grid-rows-[20%,15%] 2xl:grid-rows-[20%,80%] text-white ">
                 <TitleScreen title={"SOBRE MÍ"}/>
@@ -17,7 +17,7 @@ export default function AboutMe (){
                     <Carrusel/>
                     <div className=" flex flex-col justify-center items-center md:mt-[320px] md:h-[70vh] xl:mr-14 xl:mt-[50vh]  2xl:mt-[30vh]">
                         <Foto/>
-                        <a href={CV} download="">
+                        <a href={CV} download="Edward Vera.pdf">
                             <DownloadButton/>
                         </a>
                     </div>
