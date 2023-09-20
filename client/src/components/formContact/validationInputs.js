@@ -6,15 +6,8 @@ const validationInputs = (input) => {
   if (!input.name) {
     errors.name = "Debe ingresar un nombre.";
   } else {
-    if (input.name.length > 60) errors.name = "No ingrese más de 60 caracteres.";
-    if (regexNumbers.test(input.name)) errors.name = "No debe ingresar números.";
-  }
-
-  // Validacion de Message  
-  if (!input.message) {
-    errors.message = "Debe ingresar un mensaje.";
-  } else {
-    if (input.message.length > 1000) errors.message = "No debe ingresar más de 1000 caracteres.";
+    if (input.name.length > 60) errors.name = "Máximo de 60 caracteres.";
+    if (regexNumbers.test(input.name)) errors.name = "No ingrese números.";
   }
 
   // Validacion de Email 
@@ -23,7 +16,14 @@ const validationInputs = (input) => {
     errors.email = "Debe ingresar un email.";
   } else {
     if (!regexEmail.test(input.email)) errors.email = "Ingrese un email válido.";
-    if (input.email.length > 60) errors.email = "No debe ingresar más de 60 caracteres.";
+    if (input.email.length > 60) errors.email = "Máximo de 60 caracteres.";
+  }
+  
+  // Validacion de Message  
+  if (!input.message) {
+    errors.message = "Debe ingresar un mensaje.";
+  } else {
+    if (input.message.length > 1000) errors.message = "No debe ingresar más de 1000 caracteres.";
   }
 
   return errors;
