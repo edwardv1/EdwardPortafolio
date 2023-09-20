@@ -13,7 +13,7 @@ export default function SocialMedium({contact}){
                         <img src={contact.logo} class="max-w-[40px] w-full sm:max-w-[60px] xl:h-[70px] xl:max-w-[70px]"  alt="Email" />
                     </a>
                 ) : 
-                contact.link === "+54 2664328473" ? 
+                contact.link === "+542664328473" ? 
                 (
                     <a href={`https://api.whatsapp.com/send?phone=${encodeURIComponent(contact.link)}`} target="_blank" rel="noopener noreferrer">
                         <img src={contact.logo} class="max-w-[40px] w-full sm:max-w-[60px] xl:h-[70px] xl:max-w-[70px]" alt="Contacto" />

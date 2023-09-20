@@ -18,12 +18,13 @@ export default function FormContact(){
         email: "",
         message: "",
     });
+    const [touched, setTouched] = useState({
+        name: false,
+        email: false,
+        message: false,
+    });
 
     const [disable, setDisable] =useState(false);
-    // Este useEffect valida los campos en tiempo real
-    useEffect(() => {
-        setErrors(validationInputs(input));
-    }, [input]);
 
     // Este useEffect controla que el boton "Enviar" se habilite o no
     useEffect(() => { 
@@ -34,12 +35,42 @@ export default function FormContact(){
     }, [errors, input]);
 
     const handleInputChange = (event) => {
-        const {name, value} = event.target;
+        const { name, value } = event.target;
         setInput({
-            ...input,
-            [name]: value
-        })
+          ...input,
+          [name]: value,
+        });
+        // Marca el campo como "touched" cuando el usuario interactúa con el mismo
+        setTouched({
+          ...touched,
+          [name]: true,
+        });
     };
+
+    // Valida los campos solo si el usuario interactua con ellos (touched)
+    useEffect(() => {
+        if (touched.name) {
+          const validationErrors = validationInputs({ name: input.name });
+          setErrors((prevErrors) => ({
+            ...prevErrors,
+            name: validationErrors.name,
+          }));
+        }
+        if (touched.email) {
+          const validationErrors = validationInputs({ email: input.email });
+          setErrors((prevErrors) => ({
+            ...prevErrors,
+            email: validationErrors.email,
+          }));
+        }
+        if (touched.message) {
+          const validationErrors = validationInputs({ message: input.message });
+          setErrors((prevErrors) => ({
+            ...prevErrors,
+            message: validationErrors.message,
+          }));
+        }
+    }, [input, touched]);
 
     const [state, handleSubmit] = useForm("xjvqokgz");
     //Funcion que despacha el input mediante Formspree y luego lo setea
@@ -86,7 +117,7 @@ export default function FormContact(){
     return(
         <div class="h-1/2 w-full flex justify-center items-center xl:h-full">
             <ToastContainer />
-            <form onSubmit={handleSubmit} class="bg-[rgba(112,112,112,0.98)] flex flex-col w-[94%] h-[90%] sm:h-[86%] sm:w-[80%] rounded-[10px] p-4 gap-2 md:h-[92%] lg:h-[92%] xl:h-[66%] md:max-w-[700px] 2xl:h-[70%]">
+            <form onSubmit={handleSubmit} class="bg-[rgba(197,197,197,0.96)] flex flex-col w-[94%] h-[90%] sm:h-[86%] sm:w-[80%] rounded-[10px] p-4 gap-2 md:h-[92%] lg:h-[92%] xl:h-[66%] md:max-w-[700px] 2xl:h-[70%]">
                 <div className=" flex flex-row gap-6 text-sm md:text-base lg:text-lg w-full xl:text-xl">
                     <div class="flex flex-col flex-grow">
                         <label for="input" class=" w-max bg-none text-sm md:text-base lg:text-lg xl:text-xl text-black">Nombre</label>
@@ -99,7 +130,7 @@ export default function FormContact(){
                         onChange={(event) => handleInputChange(event)}
                         />
                         <section class="min-h-[20px] xl:min-h-[28px] text-sm md:text-base xl:text-lg ">
-                            {errors.name ? <p class="md:pl-1 text-danger-700 ">{errors.name}</p> : null}
+                            {errors.name ? <p class="md:pl-1 text-red-600 ">{errors.name}</p> : null}
                         </section>
                     </div>
                     <div class="flex flex-col flex-grow">
@@ -113,7 +144,7 @@ export default function FormContact(){
                         onChange={(event) => handleInputChange(event)}
                         />
                         <section class="min-h-[20px] xl:min-h-[28px] text-sm md:text-base xl:text-lg">
-                            {errors.email ? <p class="md:pl-1 text-danger-700">{errors.email}</p> : null}
+                            {errors.email ? <p class="md:pl-1 text-danger-600">{errors.email}</p> : null}
                         </section>
                     </div>
                 </div>
@@ -128,7 +159,13 @@ export default function FormContact(){
                         onChange={(event) => handleInputChange(event)}
                         />
                         <section class="min-h-[20px] md:min-h-[30px] xl:min-h-[28px] text-sm md:text-base xl:text-lg">
-                            {errors.message ? <p class="md:pl-1 text-danger-700">{errors.message}</p> : null}
+                        {errors.message ? (
+                            <p class="md:pl-1 text-danger-600">{errors.message}</p>
+                            ) : (
+                            input.message && !errors.message ? (
+                                <p class="md:pl-1 text-lime-600">{`Máximo de 1000 caracteres (${input.message.length}/1000)`}</p>
+                            ) : null
+                        )}
                         </section>
                 </div>
                 <div class="flex justify-center items-center">

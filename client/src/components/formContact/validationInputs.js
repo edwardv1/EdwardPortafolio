@@ -1,24 +1,33 @@
 const validationInputs = (input) => {
-    let errors = {};
-  
-    // Validacion de Name 
-    let regexNumbers = new RegExp("[0-9]"); 
-    if(!input.name) errors.name = "Debe ingresar un nombre.";
-    if(input.name.length > 60) errors.name = "No ingrese mas de 60 carácteres.";
-    if(regexNumbers.test(input.name)) errors.name= "No debe ingresar números.";
+  let errors = {};
 
-    // Validacion de Message  
-    if(!input.message) errors.message = "Debe ingresar un mensaje.";
-    if(input.message.length > 1200) errors.message = "No debe ingresar mas de 1200 carácteres.";
-  
-    // Validacion de Email 
-    const regexEmail = /\S+@\S+\.\S+/;
-    if(!regexEmail.test(input.email)) errors.email = "Ingrese un email valido.";
-    if(!input.email) errors.email = "Debe ingresar un email.";
-    if(input.email.length > 60) errors.email = "No debe ingresar mas de 60 carácteres."
-  
+  // Validacion de Name 
+  let regexNumbers = new RegExp("[0-9]"); 
+  if (!input.name) {
+    errors.name = "Debe ingresar un nombre.";
+  } else {
+    if (input.name.length > 60) errors.name = "No ingrese más de 60 caracteres.";
+    if (regexNumbers.test(input.name)) errors.name = "No debe ingresar números.";
+  }
 
-    return errors;
-  };
+  // Validacion de Message  
+  if (!input.message) {
+    errors.message = "Debe ingresar un mensaje.";
+  } else {
+    if (input.message.length > 1000) errors.message = "No debe ingresar más de 1000 caracteres.";
+  }
+
+  // Validacion de Email 
+  const regexEmail = /\S+@\S+\.\S+/;
+  if (!input.email) {
+    errors.email = "Debe ingresar un email.";
+  } else {
+    if (!regexEmail.test(input.email)) errors.email = "Ingrese un email válido.";
+    if (input.email.length > 60) errors.email = "No debe ingresar más de 60 caracteres.";
+  }
+
+  return errors;
+};
+
   
   export default validationInputs;

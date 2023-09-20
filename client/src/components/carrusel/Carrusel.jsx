@@ -26,7 +26,7 @@ export default function Carrusel(){
     return(
         <div
   id="carouselDarkVariant"
-  className="flex relative h-[350px] max-w-[400px] sm:max-w-[460px] md:max-w-[540px] md:mt-[120px] lg:max-w-[570px] lg:h-[370px] xl:max-w-[800px] 2xl:max-w-[920px] xl:h-[600px] xl:mt-[500px] 2xl:mt-[300px] mx-auto justify-center text-center items-center bg-sky-700"
+  className="flex relative h-[350px] max-w-[400px] sm:max-w-[460px] md:max-w-[540px] md:mt-[120px] lg:max-w-[570px] lg:h-[370px] xl:max-w-[800px] 2xl:max-w-[920px] xl:h-[600px] xl:mt-[500px] 2xl:mt-[300px] mx-auto justify-center text-center items-center bg-inherit"
   data-te-carousel-init
   data-te-ride="carousel">
   {/* Carousel indicators */}
@@ -75,7 +75,7 @@ export default function Carrusel(){
       data-te-carousel-active>
       <img
         src={whiteBackground}
-        class="block w-full h-[350px] lg:h-[370px]  xl:h-[600px]"
+        class="block w-full h-[350px] lg:h-[370px]  xl:h-[600px] rounded-[20px]"
         alt="Motorbike Smoke" />
       <div
         class="absolute inset-x-[15%] bottom-5 py-5 text-black block md:mb-[0px] lg:mb-[0px] xl:mb-[80px] 2xl:mb-[106px]">
@@ -112,7 +112,7 @@ export default function Carrusel(){
       data-te-carousel-item>
       <img
         src={whiteBackground}
-        class="block w-full h-[350px] lg:h-[370px] xl:h-[600px]"
+        class="block w-full h-[350px] lg:h-[370px] xl:h-[600px] rounded-[20px]"
         alt="Mountaintop" />
       <div
         class="absolute inset-x-[15%] bottom-5 py-5 text-center text-black block md:mb-[0px] lg:mb-[0px] xl:mb-[35px] ">
@@ -153,7 +153,7 @@ export default function Carrusel(){
       data-te-carousel-item>
       <img
         src={whiteBackground}
-        class="block w-full h-[350px] lg:h-[370px] xl:h-[600px]"
+        class="block w-full h-[350px] lg:h-[370px] xl:h-[600px] rounded-[20px]"
         alt="Woman Reading a Book" />
       <div
         class="absolute inset-x-[15%] bottom-5 py-5  text-black block md:mb-[10px] lg:mb-[-25px] xl:mb-[175px] 2xl:mb-[175px]">
