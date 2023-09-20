@@ -2,20 +2,20 @@ import React from "react";
 import styles from "./DownloadButton.css";
 
 export default function DownloadButton() {
-  const cvUrl = "../../../public/EdwardVera.pdf"; 
+  // const cvUrl = "../../../public/EdwardVera.pdf"; 
 
-  const descargarCV = () => {
-    const link = document.createElement('a');
-    link.href = cvUrl;
-    link.download = 'Edward Vera.pdf'; 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
+  // const descargarCV = () => {
+  //   const link = document.createElement('a');
+  //   link.href = cvUrl;
+  //   link.download = 'Edward Vera.pdf'; 
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
+//onClick={descargarCV}
   return (
     <div>
-      <button type="button" class="button" onClick={descargarCV}>
+      <button type="button" class="button" >
         <span class="button__text">Descargar CV</span>
         <span class="button__icon">
           <svg

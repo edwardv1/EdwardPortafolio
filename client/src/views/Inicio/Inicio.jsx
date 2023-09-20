@@ -10,7 +10,7 @@ export default function Inicio (){
             <div class="text-center flex flex-col justify-center h-screen gap-20">
                 <b class=" text-white text-4xl ml-20 md:text-5xl lg:text-6xl ">EDWARD VERA</b>
                 <div class=" pl-[10px] sm:pl-0">
-                    <div class="content pb-[200px] w-1/2 mx-auto min-w-[430px] md:min-w-[515px] lg:min-w-[780px] max-w-[760px]">
+                    <div class="content pb-[200px] w-1/2 mx-auto min-w-[430px] md:min-w-[515px] lg:min-w-[800px] max-w-[800px]">
                         <div class="content__container">
                         <p class="content__container__text text-lg sm:text-xl md:text-2xl lg:text-4xl">
                             Desarrollador Web

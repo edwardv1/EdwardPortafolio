@@ -10,19 +10,19 @@ export default function SocialMedium({contact}){
                 contact.link === "edwardismael1@gmail.com" ? 
                 (
                     <a href={`mailto:${contact.link}`} target="_blank">
-                        <img src={contact.logo} class="max-h-[50px] w-full max-w-[60px] xl:h-[70px] xl:max-w-[70px]"  alt="Email" />
+                        <img src={contact.logo} class="max-w-[40px] w-full sm:max-w-[60px] xl:h-[70px] xl:max-w-[70px]"  alt="Email" />
                     </a>
                 ) : 
                 contact.link === "+54 2664328473" ? 
                 (
                     <a href={`https://api.whatsapp.com/send?phone=${encodeURIComponent(contact.link)}`} target="_blank" rel="noopener noreferrer">
-                        <img src={contact.logo} class="max-h-[50px] w-full max-w-[60px] xl:h-[70px] xl:max-w-[70px]" alt="Contacto" />
+                        <img src={contact.logo} class="max-w-[40px] w-full sm:max-w-[60px] xl:h-[70px] xl:max-w-[70px]" alt="Contacto" />
                     </a>
                 )
                 :
                 (
                     <a href={contact.link} target="_blank">
-                        <img src={contact.logo} class="max-h-[50px] w-full max-w-[60px] xl:h-[70px] xl:max-w-[70px]" alt="Contacto" />
+                        <img src={contact.logo} class="max-w-[40px] w-full sm:max-w-[60px] xl:h-[70px] xl:max-w-[70px]" alt="Contacto" />
                     </a>
                 )
             }
@@ -32,7 +32,7 @@ export default function SocialMedium({contact}){
                 {
                     contact.link === "https://www.linkedin.com/in/edward-vera-20a577188/" ?
                     (
-                        <p class=" text-[10px] md:text-md lg:text-lg xl:text-xl">{contact.link}</p>
+                        <p class=" text-[10px] sm:text-sm md:text-md lg:text-lg xl:text-xl">{contact.link}</p>
                     )
                     :
                     <p class=" text-sm md:text-md lg:text-lg xl:text-xl">{contact.link}</p>

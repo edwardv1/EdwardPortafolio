@@ -4,6 +4,7 @@ import Carrusel from "../../components/carrusel/Carrusel";
 import Foto from "../../components/foto/Foto";
 import DownloadButton from "../../components/downloadButton/DownloadButton";
 import TitleScreen from "../../components/TitleScreen/TitleScreen";
+import CV from "../../../public/EdwardVera.pdf";
 
 export default function AboutMe (){
  
@@ -16,7 +17,9 @@ export default function AboutMe (){
                     <Carrusel/>
                     <div className=" flex flex-col justify-center items-center md:mt-[320px] md:h-[70vh] xl:mr-14 xl:mt-[50vh]  2xl:mt-[30vh]">
                         <Foto/>
-                        <DownloadButton/>
+                        <a href={CV} download="">
+                            <DownloadButton/>
+                        </a>
                     </div>
                 </div>
 
