@@ -26,7 +26,7 @@ export default function Carrusel(){
     return(
         <div
   id="carouselDarkVariant"
-  className="flex relative h-[350px] max-w-[400px] sm:max-w-[460px] md:max-w-[540px] md:mt-[120px] lg:max-w-[570px] lg:h-[370px] xl:max-w-[800px] 2xl:max-w-[920px] xl:h-[600px] xl:mt-[500px] 2xl:mt-[300px] mx-auto justify-center text-center items-center bg-inherit"
+  className="flex relative max-w-[356px] h-[350px] xs:max-w-[400px] sm:h-[300px] sm:max-w-[460px] md:h-[420px] md:max-w-[800px] md:mt-0 lg:h-[450px] lg:max-w-[570px]  xl:max-w-[800px] 2xl:max-w-[920px] xl:h-[700px] mx-auto justify-center text-center items-center bg-inherit"
   data-te-carousel-init
   data-te-ride="carousel">
   {/* Carousel indicators */}
@@ -75,22 +75,22 @@ export default function Carrusel(){
       data-te-carousel-active>
       <img
         src={whiteBackground}
-        class="block w-full h-[350px] lg:h-[370px]  xl:h-[600px] rounded-[20px]"
+        class="block w-full h-[350px] sm:h-[300px] md:h-[420px] lg:h-[450px]  xl:h-[700px] rounded-[20px]"
         alt="Motorbike Smoke" />
       <div
-        class="absolute inset-x-[15%] bottom-5 py-5 text-black block md:mb-[0px] lg:mb-[0px] xl:mb-[80px] 2xl:mb-[106px]">
-        <b class=" text-lg sm:text-xl md:text-2xl text-sky-700">Acerca de mi</b>
-        <p class="pt-2 text-[15px] sm:pt-6 sm:text-base md:pt-4 md:pb-6 lg:text-lg xl:text-xl lg:pt-2 xl:hidden text-justify">
+        class="absolute inset-x-[15%] bottom-5 py-5 text-black block md:mb-[0px] lg:mb-[0px] xl:mb-[10px] 2xl:mb-[106px]">
+        <b class="text-lg sm:text-xl md:text-2xl xl:text-3xl text-sky-700">Acerca de mi</b>
+        <p class="pt-2 pb-5 xs:pb-0 text-[13.5px] xs:text-[15px] sm:pt-4 sm:text-[15px] md:pb-[42px] md:text-xl lg:pt-4 lg:pb-5 lg:text-[22px] xl:hidden text-justify">
           En el año 2020 di mis primeros pasos en el mundo de la tecnología al embarcarme en la carrera de Ingeniería en Informática.  
           En mis dias como estudiante se afanciaba cada vez mas mi interés por la tecnología, y sobre todo por la programación, de forma que
           me condujo hacia un emocionante camino: un bootcamp intensivo en donde aprendí las bases técnicas para ser un Desarrollador Web Fullstack.
         </p>
-        <ul class=" hidden xl:block xl:text-xl xl:pt-8 text-justify">
+        <ul class=" hidden xl:block xl:text-[23px] xl:pt-4 text-justify">
           <li>
             En el año 2014 inicié mi primera carrera profesional, al estudiar Ingeniería en construccón Civil; en dicha carrera me gradué como
             Técnico Superior Universitario en el año 2018, seguidamente me vi en la posición de abandonar la carrera debido a una situación personal.
           </li>
-          <li class=" xl:pt-6">
+          <li class=" xl:pt-4">
           En el año 2020 di mis primeros pasos en el mundo de la tecnología al embarcarme en la carrera de Ingeniería en Informática;
           aunque mi interés por la misma ya habia nacido hace muchos años atrás. 
           En mis dias como estudiante se afanciaba cada vez mas mi interés por la tecnología, y sobre todo por la programación, de forma que
@@ -112,13 +112,13 @@ export default function Carrusel(){
       data-te-carousel-item>
       <img
         src={whiteBackground}
-        class="block w-full h-[350px] lg:h-[370px] xl:h-[600px] rounded-[20px]"
+        class="block w-full h-[350px] sm:h-[300px] md:h-[420px] lg:h-[450px] xl:h-[700px] rounded-[20px]"
         alt="Mountaintop" />
       <div
-        class="absolute inset-x-[15%] bottom-5 py-5 text-center text-black block md:mb-[0px] lg:mb-[0px] xl:mb-[35px] ">
-        <b class="text-lg sm:text-xl md:text-2xl text-sky-700">Aspectos personales</b>
-        <ul class="pt-2 text-[15px] sm:pt-6 sm:text-base lg:text-lg xl:text-xl md:pt-4 lg:pt-1 text-justify">
-          <p class=" hidden xl:block xl:pb-6 xl:pt-6">De acuerdo a mi experiencia educativa, puedo destacar lo siguiente de mi:</p>
+        class="absolute inset-x-[15%] bottom-5 py-5 text-center text-black block md:mb-[0px] lg:mb-[0px] xl:mb-[80px] 2xl:mb-[125px] ">
+        <b class="text-lg sm:text-xl md:text-2xl xl:text-3xl text-sky-700">Aspectos personales</b>
+        <ul class="pt-2 text-[13.5px] xs:text-[15px] sm:text-[14px] md:pb-4 md:text-xl lg:text-[22px] xl:text-[23px] md:pt-4 lg:pt-2 lg:pb-0 text-justify">
+          <p class=" hidden xl:block xl:pb-6 xl:pt-4">De acuerdo a mi experiencia educativa, puedo destacar lo siguiente de mi:</p>
           <li class="xl:hidden">
             - Cuento con sólidas habilidades comunicativas y capacidad para trabajar en equipo aplicando SCRUM y workflow de GIT.
           </li>
@@ -134,7 +134,7 @@ export default function Carrusel(){
             para ser un seguidor comprometido y efectivo. Puedo alternar entre liderar y seguir instrucciones en un grupo, adaptándome 
             según la situación lo requiera.
           </li>
-          <li class=" xl:pt-6">
+          <li class=" pb-5 xs:pb-0 xl:pt-6">
             - Me considero una persona que apuesta por la autosuperación, teniendo esto en cuenta para contribuir de manera positiva con el cumplimiento de objetivos.
           </li>
         </ul>
@@ -153,21 +153,21 @@ export default function Carrusel(){
       data-te-carousel-item>
       <img
         src={whiteBackground}
-        class="block w-full h-[350px] lg:h-[370px] xl:h-[600px] rounded-[20px]"
+        class="block w-full h-[350px] sm:h-[300px] md:h-[420px] lg:h-[450px] xl:h-[700px] rounded-[20px]"
         alt="Woman Reading a Book" />
       <div
-        class="absolute inset-x-[15%] bottom-5 py-5  text-black block md:mb-[10px] lg:mb-[-25px] xl:mb-[175px] 2xl:mb-[175px]">
-        <b class="text-lg sm:text-xl md:text-2xl text-sky-700">Objetivos</b>
-        <ul class="pt-2 text-[15px] sm:pt-6 sm:text-base md:pt-4 md:pb-4 lg:text-lg lg:pt-4 lg:pb-4 xl:text-xl text-justify   ">
+        class="absolute inset-x-[15%] bottom-5 py-5  text-black block md:mb-[10px] lg:mb-[-25px] xl:mb-[220px] 2xl:mb-[270px]">
+        <b class="text-lg sm:text-xl md:text-2xl xl:text-3xl text-sky-700">Objetivos</b>
+        <ul class="pt-2 text-[13.5px] xs:text-[15px] sm:pt-2 sm:text-[15px] md:pt-4 sm:pb-2 md:text-xl lg:pt-4 lg:pb-6 lg:text-[22px] xl:text-[23px] text-justify   ">
           <li class="xl:hidden">
             Actualmente me dedico a desarrollar proyectos que me permitan avanzar con mi formación, 
             a la par de realizar cursos e informandome para seguir aprendiendo fortalecer mis tech skills.
           </li>
-          <li class=" hidden xl:block xl:pb-6 xl:pt-4">
+          <li class=" hidden xl:block xl:pb-4 xl:pt-2">
             Actualmente me dedico a desarrollar proyectos que me permitan avanzar con mi formación como desarrollador web, 
-            a la par de realizar cursos e informandome para seguir aprendiendo nuevas tecnologias de vanguardia y fortalecer mis tech skills.
+            a la par de realizar cursos, asistir a pasantias e informandome para seguir aprendiendo nuevas tecnologias de vanguardia y fortalecer mis tech skills.
           </li>
-          <li class="pb-0 md:pt-6 xl:hidden">
+          <li class="pb-5 xs:pb-0 md:pt-6 xl:hidden">
           Estoy interesado en formar parte de un grupo de trabajo donde pueda combinar la estética
            y la funcionalidad del código para crear experiencias digitales cautivadoras y atractivas para los usuarios.
           </li>
