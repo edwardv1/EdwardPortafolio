@@ -33,7 +33,7 @@ export default function Header (){
   const navClass = scrolling ? 'bg-[rgba(112,112,112,0.9)] transition-bg duration-500' : 'bg-[rgba(0,0,0,0.38)] transition-bg duration-500';
 
     return(
-        <nav className={`fixed top-0 z-50 w-screen py-6 m-auto px-10 text-base font-base items-center ${navClass}`}>
+        <nav className={`fixed top-0 z-50 w-[100%] py-6 m-auto px-10 text-base font-base items-center ${navClass}`}>
             <div class="flex justify-between">
                 <div className=" flex justify-around items-center" >
                     <img src={logoE} width="28" alt="logo" />

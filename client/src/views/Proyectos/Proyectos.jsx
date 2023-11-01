@@ -74,9 +74,6 @@ export default function Proyectos (){
                 {
                     image: htmlIcon,
                 },
-                {
-                    image: bootstrapIcon,
-                },
             ],
             date: "06/2023",
             pageURL: "https://deploy-sprint-2-frontend.onrender.com/",

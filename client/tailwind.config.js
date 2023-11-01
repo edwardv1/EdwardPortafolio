@@ -15,7 +15,7 @@ module.exports = {
         whitesmoke: '#f5f5f5',
       },
       screens: {
-        'xs': '420px', //Breakpoints personalizados
+        'xs': '412px', //Breakpoints personalizados
         'mdMiddle': '881px', 
       },
     },
