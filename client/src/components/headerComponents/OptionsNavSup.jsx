@@ -57,8 +57,8 @@ export default function OptionsNavSup(){
                         <img src={proyects} alt="Proyectos" class="md:w-[14px] md:ml-[4px] lg:w-[18px]  object-cover" />
                     </div>
                 </li>
-                <li class="md:px-5 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Footer')}>
-                    <a href="#Footer">
+                <li class="md:px-5 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Contacto')}>
+                    <a href="#Contacto">
                         <b class="ml-1">Contacto</b>
                     </a>
                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 md:py-[2px] md:ml-[3px] lg:ml-0 lg:py-[3px]">

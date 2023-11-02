@@ -32,10 +32,10 @@ export default function SocialMedium({contact}){
                 {
                     contact.link === "https://www.linkedin.com/in/edward-vera-20a577188/" ?
                     (
-                        <p class=" text-[10px] sm:text-sm md:text-md lg:text-lg xl:text-xl">{contact.link}</p>
+                        <p class=" text-[10px] sm:text-sm md:text-lg xl:text-xl">{contact.link}</p>
                     )
                     :
-                    <p class=" text-sm md:text-md lg:text-lg xl:text-xl">{contact.link}</p>
+                    <p class=" text-sm md:text-lg xl:text-xl">{contact.link}</p>
                 }
             </section>
         </section>  

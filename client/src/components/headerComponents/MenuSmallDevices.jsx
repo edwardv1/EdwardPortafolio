@@ -57,8 +57,8 @@ export default function MenuSmallDevices({navClass, menuVisible}){
                         <img src={proyects} alt="Proyectos" class="w-[16px]  object-cover" />
                     </div>
                 </li>
-                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-sky-600 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Footer')}>
-                    <a href="#Footer">
+                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-sky-600 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Contacto')}>
+                    <a href="#Contacto">
                         <b>Contacto</b>
                     </a>
                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 py-[9.5px] px-[32px]">
