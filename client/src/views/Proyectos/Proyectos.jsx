@@ -18,7 +18,7 @@ import postgresqlIcon from "../../assets/cardProyTechs/PostgresqlTech.png";
 import bootstrapIcon from "../../assets/cardProyTechs/BootstrapTech.png";
 import cloudinaryIcon from "../../assets/cardProyTechs/cloudinaryTech.png";
 import castingappBg from "../../assets/backgrounds/castingAppBg.png";
-import eduplussBg from "../../assets/backgrounds/edupluss.png";
+import eduplussBg from "../../assets/backgrounds/Edupluss.png";
 
 export default function Proyectos (){
 
