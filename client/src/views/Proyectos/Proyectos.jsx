@@ -20,6 +20,33 @@ import cloudinaryIcon from "../../assets/cardProyTechs/cloudinaryTech.png";
 import castingappBg from "../../assets/backgrounds/castingAppBg.png";
 import eduplussBg from "../../assets/backgrounds/Edupluss.png";
 
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+function AnimatedCardProyect({ proyect }) {
+    const [ref, inView] = useInView({
+      triggerOnce: true, 
+      threshold: 0.1, 
+    });
+  
+    const fadeInAndSlide = {
+      hidden: { opacity: 0, y: 20 },
+      visible: { opacity: 1, y: 0 },
+    };
+  
+    return (
+      <motion.div
+        ref={ref}
+        variants={fadeInAndSlide}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        transition={{ duration: 1.0 }}
+      >
+        <CardProyect props={proyect} key={proyect.id} />
+      </motion.div>
+    );
+  }
+
 export default function Proyectos (){
 
     const arrayProyects = [
@@ -126,7 +153,7 @@ export default function Proyectos (){
             githubURL: "https://github.com/edwardv1/PokemonPI",
         },
     ]
- 
+
     return(
         <div id="Proyectos" className="bg-cover bg-center 2xl:h-[1024px] w-[100vw]" style={{ backgroundImage: `url(${background})`}}>
             <TitleScreen title="PROYECTOS"/>
@@ -134,7 +161,7 @@ export default function Proyectos (){
             <div class=" flex flex-wrap items-center justify-center pt-6 mdMiddle:pt-16 gap-6 md:gap-8 lg:gap-12 2xl:pt-32 xl:gap-14 2xl:gap-16">
                 {
                     arrayProyects.map((proyect, key)=>(
-                        <CardProyect props={proyect} key={proyect.id}/>
+                        <AnimatedCardProyect proyect={proyect} key={proyect.id} />
                     ))
                 }
             </div>
