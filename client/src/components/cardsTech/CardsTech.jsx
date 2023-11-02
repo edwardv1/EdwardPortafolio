@@ -5,10 +5,12 @@ import react from "../../assets/techs/React.png";
 import Redux from "../../assets/techs/Redux.png";
 import Css from "../../assets/techs/Css.png";
 import Html from "../../assets/techs/Html.png";
-import Bootstrap from "../../assets/techs/Bootstrap.png";
+// import Bootstrap from "../../assets/techs/Bootstrap.png";
+import Primereact from "../../assets/techs/Primereact.png";
 import Tailwind from "../../assets/techs/Tailwind.png";
 import Nodejs from "../../assets/techs/Nodejs.png";
 import Express from "../../assets/techs/Express.png";
+import JWT from "../../assets/techs/JWT.png";
 import Sequelize from "../../assets/techs/Sequelize.png";
 import Postgresql from "../../assets/techs/Postgresql.png";
 import Git from "../../assets/techs/Git.png";
@@ -47,13 +49,17 @@ export default function CardsTech(){
             name: "HTML",
         },
         {
-            image: Bootstrap,
-            name: "Bootstrap",
-        },
-        {
             image: Tailwind,
             name: "Tailwind CSS",
         },
+        {
+            image: Primereact,
+            name: "PrimeReact",
+        },
+        // {
+        //     image: Bootstrap,
+        //     name: "Bootstrap",
+        // },
         {
             image: Figma,
             name: "Figma",
@@ -65,6 +71,10 @@ export default function CardsTech(){
         {
             image: Express,
             name: "Express",
+        },
+        {
+            image: JWT,
+            name: "JWT",
         },
         {
             image: Sequelize,
