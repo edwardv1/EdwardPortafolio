@@ -8,7 +8,7 @@ export default function Inicio (){
         <div id="Inicio" className="bg-cover bg-center h-[100vh] w-[100vw] " style={{ backgroundImage: `url(${background})`}}>
             <div class="text-center flex flex-col justify-center h-screen gap-20">
                 <b class=" text-white text-4xl ml-10 xs:ml-20 sm:mt-[200px] md:text-5xl lg:mt-[100px] lg:text-6xl 2xl:mt-0 ">EDWARD VERA</b>
-                <div class="content pb-[200px] w-1/2 ml-4 mx-auto min-w-[340px] xs:ml-0 xs:min-w-[412px] sm:min-w-[525px] lg:min-w-[774px] max-w-[800px]">
+                <div class="content pb-[200px] w-1/2 ml-4 xs:mx-auto min-w-[340px]  xs:min-w-[412px] sm:min-w-[525px] lg:min-w-[774px] max-w-[800px]">
                     <div class="content__container xs:ml-4 sm:ml-0">
                     <p class="content__container__text ml-[20px] xs:ml-[10px] mt-[5px] xs:pl-2 text-sm xs:mt-[2px] xs:text-base sm:ml-[20px] md:mt-0 sm:text-xl md:pl-0 md:text-2xl lg:text-4xl">
                         Desarrollador Web
