@@ -4,7 +4,7 @@ import Carrusel from "../../components/AboutMe/Carrusel";
 import Foto from "../../components/AboutMe/Foto";
 import DownloadButton from "../../components/AboutMe/DownloadButton/DownloadButton";
 import TitleScreen from "../../components/TitleScreen/TitleScreen";
-import CV from "../../../public/EdwardVera.pdf";
+import CV from "../../assets/EdwardVera.pdf";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
