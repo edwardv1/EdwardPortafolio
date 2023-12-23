@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import inicio from "../../assets/inicio.png";
-import about from "../../assets/about.png";
-import proyects from "../../assets/proyects.png";
-import skills from "../../assets/skills.png";
-import contact from "../../assets/contact.png";
+import inicio from "../../assets/nav/inicio.png";
+import about from "../../assets/nav/about.png";
+import proyects from "../../assets/nav/proyects.png";
+import skills from "../../assets/nav/skills.png";
+import timeline from "../../assets/nav/timeline.png";
+import contact from "../../assets/nav/contact.png";
+
 
 export default function MenuSmallDevices({navClass, menuVisible}){
 
@@ -55,6 +57,14 @@ export default function MenuSmallDevices({navClass, menuVisible}){
                     </a>
                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 py-[10.8px] px-[32px]">
                         <img src={proyects} alt="Proyectos" class="w-[16px]  object-cover" />
+                    </div>
+                </li>
+                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-sky-600 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Timeline')}>
+                    <a href="#Timeline">
+                        <b>Timeline</b>
+                    </a>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 py-[10.8px] px-[32px]">
+                        <img src={timeline} alt="Timeline" class="w-[16px]  object-cover" />
                     </div>
                 </li>
                 <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-sky-600 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Contacto')}>

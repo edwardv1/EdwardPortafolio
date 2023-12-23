@@ -1,0 +1,52 @@
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.date {
+  color: #ffffff;
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+  font-size: 14.8px;
+}
+
+.buttonTimeLine {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.workButton {
+  background: linear-gradient(304deg, rgba(19,149,150,1) 0%, rgba(89,203,68,1) 100%);
+  border: 2px solid rgb(255, 255, 255);
+}
+.workButton:hover{
+  border: 2px solid rgba(19,149,150,1);
+}
+
+.educationButton {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,147,1) 0%, rgba(0,171,205,1) 100%);
+  border: 2px solid rgb(255, 255, 255);
+}
+.educationButton:hover {
+  border: 2px solid rgba(0,171,205,1);
+}
+
+@media only screen and (max-width: 1169px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #description {
+    font-size: 15px;
+  }
+}

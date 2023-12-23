@@ -6,6 +6,7 @@ import Proyectos from "../Proyectos/Proyectos";
 import Skills from "../Skills/Skills";
 import Contacto from "../Contacto/Contacto";
 import Footer from "../Footer/Footer";
+import Timeline from "../Timeline/Timeline";
 
 export default function LandingPage (){
  
@@ -16,6 +17,7 @@ export default function LandingPage (){
             <AboutMe/>
             <Skills/>
             <Proyectos/>
+            <Timeline/>
             <Contacto/>
             <Footer className="absolute bottom-0"/>
         </div>

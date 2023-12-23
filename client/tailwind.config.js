@@ -17,6 +17,8 @@ module.exports = {
       screens: {
         'xs': '412px', //Breakpoints personalizados
         'mdMiddle': '881px', 
+        'lgMiddle': '1170px',
+        '4xl': '1628px',
       },
     },
   },
