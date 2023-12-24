@@ -94,20 +94,22 @@ export default function Timeline() {
                   {element.description}
                 </p>
                 {showButton && (
-                  <a
-                    className={`buttonTimeLine ${
-                      isWorkIcon ? "workButton" : "educationButton"
-                    } text-sm md:text-base`}
-                    href={element.href}
-                    target={element.target}
-                    onClick={(e) =>
-                      element.href === "#Proyectos"
-                        ? handleClick(e, "Proyectos")
-                        : null
-                    }
-                  >
-                    {element.buttonText}
-                  </a>
+                  <div className="containerButton" >
+                    <a
+                      className={`buttonTimeLine ${
+                        isWorkIcon ? "workButton" : "educationButton"
+                      } text-sm md:text-base`}
+                      href={element.href}
+                      target={element.target}
+                      onClick={(e) =>
+                        element.href === "#Proyectos"
+                          ? handleClick(e, "Proyectos")
+                          : null
+                      }
+                    >
+                      {element.buttonText}
+                    </a>
+                  </div>
                 )}
               </VerticalTimelineElement>
             );

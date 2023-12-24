@@ -14,27 +14,38 @@
   font-size: 14.8px;
 }
 
+.containerButton {
+  display: inline-block;
+  transform-origin: center; 
+  transition: transform 0.2s;
+}
+.containerButton:active {
+  transform: scale(0.95);
+}
 .buttonTimeLine {
   text-decoration: none;
   padding: 0.5em 1em;
   border-radius: 5px;
   color: white;
+  transition: transform 0.2s;
 }
-
 .workButton {
   background: linear-gradient(304deg, rgba(19,149,150,1) 0%, rgba(89,203,68,1) 100%);
-  border: 2px solid rgb(255, 255, 255);
 }
 .workButton:hover{
-  border: 2px solid rgba(19,149,150,1);
+   background-position: right center;
 }
-
 .educationButton {
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,147,1) 0%, rgba(0,171,205,1) 100%);
-  border: 2px solid rgb(255, 255, 255);
 }
 .educationButton:hover {
-  border: 2px solid rgba(0,171,205,1);
+  background-position: right center;
+}
+
+.workButton,
+.educationButton {
+  background-size: 200% auto; 
+  transition: background-position 0.5s;
 }
 
 @media only screen and (max-width: 1169px) {
