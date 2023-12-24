@@ -23,7 +23,7 @@ export default function AboutMe (){
     }, [controls, inView]);
 
     return(
-        <div id="AboutMe" className="bg-cover bg-center h-[1024px] w-[100vw]" style={{ backgroundImage: `url(${background})`}} >
+        <div id="AboutMe" className="bg-cover bg-center h-[1024px] w-full" style={{ backgroundImage: `url(${background})`}} >
             <div class="text-center h-screen grid grid-rows-[20%,62%] xs:grid-rows-[20%,42%] sm:grid-rows-[30%,37%] md:grid-rows-[5%,75%]  lg:grid-rows-[5%,75%] xl:grid-rows-[10%,75%]  2xl:grid-rows-[0%,75%] ">
                 <TitleScreen title={"SOBRE MÍ"}/>
                 <motion.div

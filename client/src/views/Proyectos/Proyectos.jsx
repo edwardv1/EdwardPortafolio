@@ -33,7 +33,7 @@ function AnimatedCardProyect({ proyect }) {
 export default function Proyectos (){
 
     return(
-        <div id="Proyectos" className="bg-cover bg-center 4xl:h-[1024px] w-[100vw]" style={{ backgroundImage: `url(${background})`}}>
+        <div id="Proyectos" className="bg-cover bg-center 4xl:h-[1024px] w-full" style={{ backgroundImage: `url(${background})`}}>
             <TitleScreen title="PROYECTOS"/>
             <p class="text-white px-4 sm:px-8 mt-14 text-center sm:text-lg md:text-2xl xl:pt-8 xl:text-3xl 2xl:pt-0">Estos son los proyectos que he realizado ya sea de forma individual o en los que he participado.</p>
             <div class=" flex flex-wrap items-center justify-center pt-6 mdMiddle:pt-16 gap-6 md:gap-8 lg:gap-12 4xl:pt-32 xl:gap-14 2xl:gap-16">

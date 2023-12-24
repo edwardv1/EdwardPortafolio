@@ -9,7 +9,7 @@ export default function Footer (){
         window.scrollTo({ top: 0, behavior: 'smooth' });
       };
     return(
-        <div id="Footer" className="bg-cover bg-center bg-slate-900 w-[100vw] flex flex-col justify-center items-center h-[80px] lg:h-[100px]">
+        <div id="Footer" className="bg-cover bg-center bg-slate-900 w-full flex flex-col justify-center items-center h-[80px] lg:h-[100px]">
             <button className={`${styles.containerFooter} bg-sky-700 rounded-full flex justify-center items-center h-[30px] w-[30px] top-0 lg:h-[40px] lg:w-[40px]`} onClick={scrollToTop}>
                 <img src={arrowUp} class="h-[14px] lg:h-[20px]" alt="" />
             </button>

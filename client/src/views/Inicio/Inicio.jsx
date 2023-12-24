@@ -5,7 +5,7 @@ import styles from "./Inicio.css"
 export default function Inicio (){
  //height: `calc(100vh + 30px)`
     return(
-        <div id="Inicio" className="bg-cover bg-center h-[100vh] w-[100vw] " style={{ backgroundImage: `url(${background})`}}>
+        <div id="Inicio" className="bg-cover bg-center h-[100vh] w-full" style={{ backgroundImage: `url(${background})`}}>
             <div class="text-center flex flex-col justify-center h-screen gap-20">
                 <b class=" text-white text-4xl ml-10 xs:ml-20 sm:mt-[200px] md:text-5xl lg:mt-[100px] lg:text-6xl 2xl:mt-0 ">EDWARD VERA</b>
                 <div class="content pb-[200px] w-1/2 ml-4 xs:mx-auto min-w-[340px]  xs:min-w-[392px] sm:min-w-[458px] md:min-w-[540px] lg:min-w-[774px] max-w-[800px]">

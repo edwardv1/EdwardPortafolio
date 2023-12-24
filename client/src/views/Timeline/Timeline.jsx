@@ -43,11 +43,7 @@ export default function Timeline() {
   };
 
   return (
-    <div
-      id="Timeline"
-      className="bg-cover bg-center w-[100vw]"
-      style={{ backgroundImage: `url(${background})` }}
-    >
+    <div id="Timeline" className="bg-cover bg-center w-full" style={{ backgroundImage: `url(${background})` }}>
       <TitleScreen title="TIMELINE" />
       <p class="text-white px-4 sm:px-8 mt-14 text-center sm:text-lg md:text-2xl xl:pt-8 xl:text-3xl 2xl:pt-0">
         Este es un resumen de mi trayectoria profesional y educacional.
