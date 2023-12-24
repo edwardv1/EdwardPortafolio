@@ -19,7 +19,7 @@ import Figma from "../../assets/techs/Figma.png";
 import Vscode from "../../assets/techs/Vscode.png";
 import Sass from "../../assets/techs/Sass.png";
 import Jest from "../../assets/techs/Jest.png";
-import TestingLibrary from "../../assets/techs/TestingLibrary.png";
+import TestingLibrary from "../../assets/techs/Testinglibrary.png";
 
 const arrayCardsTech = [
     {
