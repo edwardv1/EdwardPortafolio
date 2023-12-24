@@ -17,6 +17,9 @@ import Github from "../../assets/techs/Github.png";
 import Postman from "../../assets/techs/Postman.png";
 import Figma from "../../assets/techs/Figma.png";
 import Vscode from "../../assets/techs/Vscode.png";
+import Sass from "../../assets/techs/Sass.png";
+import Jest from "../../assets/techs/Jest.png";
+import TestingLibrary from "../../assets/techs/TestingLibrary.png";
 
 const arrayCardsTech = [
     {
@@ -48,17 +51,25 @@ const arrayCardsTech = [
         name: "Tailwind CSS",
     },
     {
+        image: Sass,
+        name: "Sass",
+    },
+    {
         image: Primereact,
         name: "PrimeReact",
+    },
+    {
+        image: Jest,
+        name: "Jest",
+    },
+    {
+        image: TestingLibrary,
+        name: "Testing Library",
     },
     // {
     //     image: Bootstrap,
     //     name: "Bootstrap",
     // },
-    {
-        image: Figma,
-        name: "Figma",
-    },
     {
         image: Nodejs,
         name: "Node.js",
@@ -94,6 +105,10 @@ const arrayCardsTech = [
     {
         image: Vscode,
         name: "VSCode",
+    },
+    {
+        image: Figma,
+        name: "Figma",
     },
 ]
 

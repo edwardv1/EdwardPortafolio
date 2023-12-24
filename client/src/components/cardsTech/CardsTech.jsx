@@ -29,7 +29,7 @@ function AnimatedCardTech({ card, index }) {
 export default function CardsTech(){
 
     return(
-        <div class=" flex flex-wrap items-center justify-center p-6 gap-6 md:p-8 md:gap-8 lg:p-10 lg:gap-12 xl:p-10 xl:gap-14 2xl:gap-24">
+        <div class=" flex flex-wrap items-center justify-center p-6 gap-6 md:p-8 md:gap-8 lg:p-10 lg:gap-12 xl:p-10 xl:gap-14 2xl:gap-20">
             {
                 arrayCardsTech.map((card, index)=>(
                     <AnimatedCardTech key={index} card={card} index={index} />
