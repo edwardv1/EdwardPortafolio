@@ -36,7 +36,7 @@ export default function Timeline() {
   };
   let educationIconStyles = {
     background:
-      "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,147,1) 0%, rgba(0,171,205,1) 100%)",
+      "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(92, 130, 255)  0%, rgb(43, 82, 211) 100%)",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -80,10 +80,10 @@ export default function Timeline() {
                   )
                 }
               >
-                <h3 className="vertical-timeline-element-title pt-1">
+                <h3 className="vertical-timeline-element-title pt-1 xl:text-[18px]">
                   <b>{element.title}</b>
                 </h3>
-                <h5 className="vertical-timeline-element-subtitle">
+                <h5 className="vertical-timeline-element-subtitle xl:text-lg">
                   {element.location}
                 </h5>
                 <p id="description" className=" text-justify">
@@ -94,7 +94,7 @@ export default function Timeline() {
                     <a
                       className={`buttonTimeLine ${
                         isWorkIcon ? "workButton" : "educationButton"
-                      } text-sm md:text-base`}
+                      } text-sm md:text-[18px]`}
                       href={element.href}
                       target={element.target}
                       onClick={(e) =>

@@ -27,7 +27,7 @@ export default function MenuSmallDevices({navClass, menuVisible}){
     return(
         <div className={`md:hidden ${navClass} fixed top-[78px] right-0 h-screen w-[200px]  pl-4 transform transition-transform duration-1000 ease-out ${menuVisible ? 'translate-x-0 ' : 'translate-x-full'}`}>
             <ul class="flex h-5/6 sm:h-[76%] flex-col items-center text-center justify-around w-full ">
-                <li class="  w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-sky-600 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Inicio')}>
+                <li class="  w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-primaryColor cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Inicio')}>
                     <a href="#Inicio">
                         <b>Inicio</b>
                     </a>
@@ -35,7 +35,7 @@ export default function MenuSmallDevices({navClass, menuVisible}){
                         <img src={inicio} alt="Inicio" class="w-[14px]  object-cover" />
                     </div>
                 </li>
-                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-sky-600 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('AboutMe')}>
+                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-primaryColor cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('AboutMe')}>
                     <a href="#AboutMe">
                         <b>Sobre mi</b>
                     </a>
@@ -43,7 +43,7 @@ export default function MenuSmallDevices({navClass, menuVisible}){
                         <img src={about} alt="Sobre mi" class="w-[11.5px]  object-cover" />
                     </div>
                 </li>
-                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-sky-600 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Skills')}>
+                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-primaryColor cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Skills')}>
                     <a href="#Skills">
                         <b>Habilidades</b>
                     </a>
@@ -51,7 +51,7 @@ export default function MenuSmallDevices({navClass, menuVisible}){
                         <img src={skills} alt="Habilidades" class="w-[16px]  object-cover" />
                     </div>
                 </li>
-                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-sky-600 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Proyectos')}>
+                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-primaryColor cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Proyectos')}>
                     <a href="#Proyectos">
                         <b>Proyectos</b>
                     </a>
@@ -59,7 +59,7 @@ export default function MenuSmallDevices({navClass, menuVisible}){
                         <img src={proyects} alt="Proyectos" class="w-[16px]  object-cover" />
                     </div>
                 </li>
-                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-sky-600 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Timeline')}>
+                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-primaryColor cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Timeline')}>
                     <a href="#Timeline">
                         <b>Timeline</b>
                     </a>
@@ -67,7 +67,7 @@ export default function MenuSmallDevices({navClass, menuVisible}){
                         <img src={timeline} alt="Timeline" class="w-[16px]  object-cover" />
                     </div>
                 </li>
-                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-sky-600 cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Contacto')}>
+                <li class=" w-full mr-[16px] border-t-2 border-b-2 border-white py-2 hover:border-primaryColor cursor-pointer transform transition-transform duration-500 hover:scale-105 text-white overflow-hidden group" onClick={() => scrollToSection('Contacto')}>
                     <a href="#Contacto">
                         <b>Contacto</b>
                     </a>

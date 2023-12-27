@@ -36,7 +36,7 @@
    background-position: right center;
 }
 .educationButton {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,147,1) 0%, rgba(0,171,205,1) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(92, 130, 255) 0%, rgb(82, 201, 225) 100%);
 }
 .educationButton:hover {
   background-position: right center;
@@ -58,6 +58,11 @@
 }
 @media only screen and (min-width: 1024px) {
   #description {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
+/* @media only screen and (min-width: 1170px) {
+  .date {
+    color: rgb(92, 130, 255);
+  }
+} */

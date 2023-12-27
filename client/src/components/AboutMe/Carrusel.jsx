@@ -36,7 +36,7 @@ export default function Carrusel(){
   <button
     onClick={() => setCurrentSlide(0)}
     className={`mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] ${
-      currentSlide === 0 ? 'opacity-100 bg-sky-700' : 'opacity-50'
+      currentSlide === 0 ? 'opacity-100 bg-primaryColor' : 'opacity-50'
     }`}
     aria-current={currentSlide === 0 ? 'true' : 'false'}
     aria-label="Slide 1"
@@ -44,7 +44,7 @@ export default function Carrusel(){
   <button
     onClick={() => setCurrentSlide(1)}
     className={`mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] ${
-      currentSlide === 1 ? 'opacity-100 bg-sky-700' : 'opacity-50'
+      currentSlide === 1 ? 'opacity-100 bg-primaryColor' : 'opacity-50'
     }`}
     aria-current={currentSlide === 1 ? 'true' : 'false'}
     aria-label="Slide 2"
@@ -52,7 +52,7 @@ export default function Carrusel(){
   <button
     onClick={() => setCurrentSlide(2)}
     className={`mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] ${
-      currentSlide === 2 ? 'opacity-100 bg-sky-700' : 'opacity-50'
+      currentSlide === 2 ? 'opacity-100 bg-primaryColor' : 'opacity-50'
     }`}
     aria-current={currentSlide === 2 ? 'true' : 'false'}
     aria-label="Slide 3"
@@ -79,7 +79,7 @@ export default function Carrusel(){
         alt="Motorbike Smoke" />
       <div
         class="absolute inset-x-[15%] bottom-5 py-5 text-black block md:mb-[0px] lg:mb-[0px] xl:mb-[10px] 2xl:mb-[106px]">
-        <b class="text-lg sm:text-xl md:text-2xl xl:text-3xl text-sky-700">Acerca de mi</b>
+        <b class="text-lg sm:text-xl md:text-2xl xl:text-3xl text-primaryColor">Acerca de mi</b>
         <p class="pt-2 pb-5 xs:pb-0 text-[13.5px] xs:text-[15px] sm:pt-4 sm:text-[15px] md:pb-[42px] md:text-xl lg:pt-4 lg:pb-5 lg:text-[22px] xl:hidden text-justify">
           En el año 2020 di mis primeros pasos en el mundo de la tecnología al embarcarme en la carrera de Ingeniería en Informática.  
           En mis dias como estudiante se afanciaba cada vez mas mi interés por la tecnología, y sobre todo por la programación, de forma que
@@ -116,8 +116,8 @@ export default function Carrusel(){
         alt="Mountaintop" />
       <div
         class="absolute inset-x-[15%] bottom-5 py-5 text-center text-black block md:mb-[0px] lg:mb-[0px] xl:mb-[80px] 2xl:mb-[125px] ">
-        <b class="text-lg sm:text-xl md:text-2xl xl:text-3xl text-sky-700">Aspectos personales</b>
-        <ul class="pt-2 text-[13.5px] xs:text-[15px] sm:text-[14px] md:pb-4 md:text-xl lg:text-[22px] xl:text-[23px] md:pt-4 lg:pt-2 lg:pb-0 text-justify">
+        <b class="text-lg sm:text-xl md:text-2xl xl:text-3xl text-primaryColor">Aspectos personales</b>
+        <ul class="pt-2 text-[13.5px] xs:text-[15px] sm:text-[14px] md:pb-4 md:text-xl lg:text-[22px] xl:text-[23px] md:pt-4 lg:pt-1 lg:pb-0 text-justify">
           <p class=" hidden xl:block xl:pb-6 xl:pt-4">De acuerdo a mi experiencia educativa, puedo destacar lo siguiente de mi:</p>
           <li class="xl:hidden">
             - Cuento con sólidas habilidades comunicativas y capacidad para trabajar en equipo aplicando SCRUM y workflow de GIT.
@@ -157,7 +157,7 @@ export default function Carrusel(){
         alt="Woman Reading a Book" />
       <div
         class="absolute inset-x-[15%] bottom-5 py-5  text-black block md:mb-[10px] lg:mb-[-25px] xl:mb-[220px] 2xl:mb-[270px]">
-        <b class="text-lg sm:text-xl md:text-2xl xl:text-3xl text-sky-700">Objetivos</b>
+        <b class="text-lg sm:text-xl md:text-2xl xl:text-3xl text-primaryColor">Objetivos</b>
         <ul class="pt-2 text-[13.5px] xs:text-[15px] sm:pt-2 sm:text-[15px] md:pt-4 sm:pb-2 md:text-xl lg:pt-4 lg:pb-6 lg:text-[22px] xl:text-[23px] text-justify   ">
           <li class="xl:hidden">
             Actualmente me dedico a desarrollar proyectos que me permitan avanzar con mi formación, 
@@ -183,7 +183,7 @@ export default function Carrusel(){
 
   {/* <!-- Carousel controls - prev item--> */}
   <button
-    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-primaryColor hover:no-underline hover:opacity-90 hover:outline-none focus:text-primaryColor focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
     type="button"
     data-te-target="#carouselDarkVariant"
     data-te-slide="prev"
@@ -209,7 +209,7 @@ export default function Carrusel(){
   </button>
   {/* <!-- Carousel controls - next item--> */}
   <button
-    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-primaryColor hover:no-underline hover:opacity-90 hover:outline-none focus:text-primaryColor focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
     type="button"
     data-te-target="#carouselDarkVariant"
     data-te-slide="next"

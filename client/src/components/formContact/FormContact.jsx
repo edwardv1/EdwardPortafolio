@@ -125,7 +125,7 @@ export default function FormContact(){
                         type="text" 
                         name="name" 
                         value={input.name} 
-                        class=" w-full rounded-lg pl-2 border-2 border-sky-700 h-[30px] 2xl:h-[35px]"
+                        class=" w-full rounded-lg pl-2 border-2 border-primaryColor h-[30px] 2xl:h-[35px]"
                         placeholder="Ingrese su nombre..."
                         onChange={(event) => handleInputChange(event)}
                         />
@@ -139,7 +139,7 @@ export default function FormContact(){
                         type="email" 
                         name="email" 
                         value={input.email} 
-                        class=" w-full rounded-lg pl-2 border-2 border-sky-700 h-[30px] 2xl:h-[35px]"
+                        class=" w-full rounded-lg pl-2 border-2 border-primaryColor h-[30px] 2xl:h-[35px]"
                         placeholder="Ingrese su email..."
                         onChange={(event) => handleInputChange(event)}
                         />
@@ -154,7 +154,7 @@ export default function FormContact(){
                         type="text" 
                         name="message" 
                         value={input.message} 
-                        class=" w-full h-[70px] sm:h-[100px] md:h-[90px] rounded-lg pl-2 pb-12 sm:pb-14 text-start border-2 border-sky-700 xl:h-[190px] xl:pb-36"
+                        class=" w-full h-[70px] sm:h-[100px] md:h-[90px] rounded-lg pl-2 pb-12 sm:pb-14 text-start border-2 border-primaryColor xl:h-[190px] xl:pb-36"
                         placeholder="Ingrese un mensaje aquí..."
                         onChange={(event) => handleInputChange(event)}
                         />

@@ -1,6 +1,4 @@
 import React from "react";
-import linkedIn from "../../assets/contact/linkedinContact.png";
-
 
 export default function SocialMedium({contact}){
     return(
@@ -28,7 +26,7 @@ export default function SocialMedium({contact}){
             }
             </section>
             <section class="flex flex-col w-[84%]">
-                <b class=" text-sky-700 text-base md:text-lg lg:text-xl xl:text-2xl">{contact.name}</b>
+                <b class=" text-primaryColor text-base md:text-lg lg:text-xl xl:text-2xl">{contact.name}</b>
                 {
                     contact.link === "https://www.linkedin.com/in/edward-vera-20a577188/" ?
                     (

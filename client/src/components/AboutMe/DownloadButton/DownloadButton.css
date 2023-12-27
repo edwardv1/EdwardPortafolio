@@ -1,7 +1,7 @@
 .button {
   --main-focus: #2d8cf0;
   --font-color: #dedede;
-  --bg-color-sub: #0369a1;
+  --bg-color-sub: rgb(92, 130, 255);
   --bg-color: #323232;
   --main-color: #dedede;
   position: relative;

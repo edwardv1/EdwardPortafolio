@@ -38,7 +38,7 @@ export default function OptionsNavSup(){
                     <a href="#AboutMe">
                         <b>Sobre mi</b>
                     </a>   
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 md:py-[2.4px] md:pl-[1.8px] lg:py-[5px] lg:pl-0">
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 md:py-[4px] md:pl-[1.8px] lg:py-[5px] lg:pl-0">
                         <img src={about} alt="Sobre mi" class="md:w-[11.5px] lg:w-[12.5px]  object-cover" />
                     </div>
                 </li>
@@ -70,7 +70,7 @@ export default function OptionsNavSup(){
                     <a href="#Contacto">
                         <b class="ml-1">Contacto</b>
                     </a>
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 md:py-[2px] md:ml-[3px] lg:ml-0 lg:py-[2px]">
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 md:py-[2.3px] md:ml-[3px] lg:ml-0 lg:py-[2px]">
                         <img src={contact} alt="Contacto" class="md:w-[16px] lg:w-[19px]  object-cover" />
                     </div>
                 </li>

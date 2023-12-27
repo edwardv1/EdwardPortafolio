@@ -11,6 +11,7 @@ module.exports = {
         'primary-gradient': 'linear-gradient(304deg, rgba(19,149,150,1) 0%, rgba(89,203,68,1) 100%)',
       },
       colors: {
+        primaryColor: 'rgb(92, 130, 255)',
         bgCard: 'rgb(5, 6, 45)',
         whitesmoke: '#f5f5f5',
       },
