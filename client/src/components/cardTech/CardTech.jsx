@@ -11,8 +11,8 @@ export default function CardTech({image, name}){
                         mt-1 
                         ${name ==="Testing Library" ? "text-[11px]" : "text-xs"}  
                         ${name ==="Testing Library" ? "xs:text-xs" : "xs:text-sm"} 
-                        ${name ==="Testing Library" ? "md:text-[16px]" : "md:text-[19px]"}  
-                        ${name ==="Testing Library" ? "md:text-[20px]" : "lg:text-[22px]"}  
+                        ${name ==="Testing Library" ? "md:text-[15.8px]" : "md:text-[19px]"}  
+                        ${name ==="Testing Library" ? "lg:text-[20px]" : "lg:text-[22px]"}  
                         lg:mt-3  
                         ${name ==="Testing Library" ? "xl:text-[21px]" : "xl:text-[24px]"} `}>
                             {name}
