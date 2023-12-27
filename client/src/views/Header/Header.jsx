@@ -36,8 +36,8 @@ export default function Header (){
         <nav className={`fixed top-0 z-50 w-[100vw] py-6 m-auto px-10 text-base font-base items-center ${navClass}`}>
             <div class="flex justify-between">
                 <div className=" flex justify-around items-center" >
-                    <img src={logoE} width="28" alt="logo" />
-                    <p className=" ml-2 w-[156px] text-white font-mono md:text-lg xl:text-xl">Edward Vera</p>
+                    <img src={logoE} width="28" alt="logo" className=" md:mr-8 mdMiddle:mr-0" />
+                    <p className=" ml-2 w-[156px] text-white font-mono md:text-lg md:hidden mdMiddle:block xl:text-xl">Edward Vera</p>
                 </div>
                 {/* Opciones del navbar superior */}
                 <OptionsNavSup/>
