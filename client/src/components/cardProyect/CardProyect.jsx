@@ -16,8 +16,8 @@ export default function CardProyect({props}){
                 <div class=" bg-whitesmoke grid grid-col-[30%,70%] w-[350px] xs:w-[380px] sm:w-[420px] h-[90px] sm:h-[100px] xl:w-[500px] xl:h-[110px] rounded-bl-[10px] rounded-br-[10px]">
                     <div class="flex flex-wrap text-center gap-x-2 justify-center items-center pt-2 h-[30px] md:h-[50px]">
                         {
-                            props.arrayTechs.map((techIcon) => (
-                                <img src={techIcon.image} class="w-[30px] h-[30px] md:w-[34px] md:h-[34px] xl:w-[40px] xl:h-[40px]" alt="Tecnología" />
+                            props.arrayTechs.map((techIcon, index) => (
+                                <img src={techIcon.image} key={index} class="w-[30px] h-[30px] md:w-[34px] md:h-[34px] xl:w-[40px] xl:h-[40px]" alt="Tecnología" />
                             ))
                         }
                     </div>

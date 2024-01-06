@@ -2,10 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import arrayCardsTech from "./techsData";
-
 import CardTech from "../cardTech/CardTech";
 
-function AnimatedCardTech({ card, index }) {
+function AnimatedCardTech({ card, index, openModalDescription, changeName }) {
     const [ref, inView] = useInView({
       triggerOnce: true, 
       threshold: 0.05, 
@@ -21,18 +20,21 @@ function AnimatedCardTech({ card, index }) {
         <CardTech
           image={card.image}
           name={card.name}
+          description={card.description}
+          openModalDescription={openModalDescription}
+          changeName={changeName}
         />
       </motion.div>
     );
   }
 
-export default function CardsTech(){
-
+export default function CardsTech({ openModalDescription, changeName }){
+  
     return(
         <div class=" flex flex-wrap items-center justify-center p-6 gap-6 md:p-8 md:gap-8 lg:p-10 lg:gap-12 xl:p-10 xl:gap-14 2xl:gap-20">
             {
                 arrayCardsTech.map((card, index)=>(
-                    <AnimatedCardTech key={index} card={card} index={index} />
+                    <AnimatedCardTech key={index} card={card} index={index} openModalDescription={openModalDescription} changeName={changeName} />
                 ))
             }
         </div>

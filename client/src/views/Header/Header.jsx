@@ -4,12 +4,13 @@ import styles from "./Header.css";
 import OptionsNavSup from "../../components/headerComponents/OptionsNavSup";
 import MenuSmallDevices from "../../components/headerComponents/MenuSmallDevices";
 
-export default function Header (){
+export default function Header ({handleSidebarVisibility}){
     
     const [menuVisible, setMenuVisible] = useState(false);
 
     const toggleMenu = () => {
       setMenuVisible(!menuVisible);
+      handleSidebarVisibility(!menuVisible);
     };
 
     // Establezco una clase CSS condicional basada en el valor de scrolling

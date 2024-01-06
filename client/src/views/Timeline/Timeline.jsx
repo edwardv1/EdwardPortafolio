@@ -52,7 +52,7 @@ export default function Timeline() {
         {timelineElements
           .slice()
           .reverse()
-          .map((element) => {
+          .map((element, index) => {
             let isWorkIcon = element.icon === "work";
             let showButton =
               element.buttonText !== undefined &&
@@ -60,7 +60,7 @@ export default function Timeline() {
               element.buttonText !== "";
             return (
               <VerticalTimelineElement
-                key={element.key}
+                key={index}
                 date={element.date}
                 dateClassName="date"
                 iconStyle={isWorkIcon ? workIconStyles : educationIconStyles}
