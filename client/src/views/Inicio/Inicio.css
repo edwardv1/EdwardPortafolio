@@ -134,13 +134,13 @@
     padding: 0px;
   }
   .content__container__text {
-    padding-top:5px;
+    padding-top:4px;
   }
   .content__container__list {
     padding-left: 0px; 
   }
   .content__container__list__item {
-    padding-top:5px;
+    padding-top:4px;
     /* margin-left: 10px; */
   }
   .content__container:before {
