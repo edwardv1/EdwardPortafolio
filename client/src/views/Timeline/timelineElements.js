@@ -31,14 +31,14 @@ let timelineElements = [
         "Formación en las tecnologías: JavaScript, CSS, HTML, React, Redux, Node JS, Express, Sequelize y Postgres SQL.",
         buttonText: "Ver Proyectos",
         date: "abril 2023 - agosto 2023",
-        icon: "school",
+        icon: "education",
         href: "#Proyectos",
         target: ""
     },
     {
         id: 4,
         title: "FullStack Web Developer (Pasantía) - Edupluss",
-        location: "Agentina",
+        location: "Argentina",
         description:
         "Adaptación del esquema de modelos relacionales. Creación y modificación de controladores y rutas del servidor. Creación y mejora de componentes con un enfoque en responsive design. Integración de servicios de terceros.",
         buttonText: "Ver Video",

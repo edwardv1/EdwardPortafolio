@@ -20,6 +20,7 @@ import Vscode from "../../assets/techs/Vscode.png";
 import Sass from "../../assets/techs/Sass.png";
 import Jest from "../../assets/techs/Jest.png";
 import TestingLibrary from "../../assets/techs/Testinglibrary.png";
+import Cypress from "../../assets/techs/Cypress.png";
 
 const arrayCardsTech = [
     {
@@ -76,6 +77,11 @@ const arrayCardsTech = [
         image: TestingLibrary,
         name: "Testing Library",
         description:"Testing Library es una herramienta para realizar pruebas en desarrollo de software, centrada en la interacción real del usuario."
+    },
+    {
+        image: Cypress,
+        name: "Cypress",
+        description:"Cypress es un framework para pruebas e2e, simplifica la automatización, ofrece una interfaz amigable y garantiza pruebas robustas y confiables."
     },
     // {
     //     image: Bootstrap,
