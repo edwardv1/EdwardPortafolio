@@ -7,6 +7,7 @@ import MenuSmallDevices from "../../components/headerComponents/MenuSmallDevices
 export default function Header ({handleSidebarVisibility}){
     
     const [menuVisible, setMenuVisible] = useState(false);
+    const [checkboxChecked, setCheckboxChecked] = useState(false);
 
     const toggleMenu = () => {
       setMenuVisible(!menuVisible);
@@ -44,7 +45,13 @@ export default function Header ({handleSidebarVisibility}){
                 <OptionsNavSup/>
                 {/* Boton de menu Hamburguesa*/}
                 <div className=" md:hidden">
-                    <input id="checkbox" type="checkbox" onClick={toggleMenu}/>
+                    <input 
+                      id="checkbox" 
+                      type="checkbox" 
+                      onClick={toggleMenu}
+                      checked={checkboxChecked}
+                      onChange={() => setCheckboxChecked(!checkboxChecked)}
+                    />
                     <label class="toggle bg-none" for="checkbox" >
                         <div id="bar1" class="bars" ></div>
                         <div id="bar2" class="bars"></div>
@@ -52,7 +59,7 @@ export default function Header ({handleSidebarVisibility}){
                     </label>
                 </div>
                 {/* Navbar Lateral para Small Devices */}
-                <MenuSmallDevices navClass={navClass} menuVisible={menuVisible}/>
+                <MenuSmallDevices navClass={navClass} menuVisible={menuVisible} toggleMenu={toggleMenu} setCheckboxChecked={setCheckboxChecked}/>
             </div>
         </nav>
     )
