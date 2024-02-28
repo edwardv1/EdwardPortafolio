@@ -117,7 +117,7 @@ export default function FormContact(){
     return(
         <div className="h-1/2 w-full flex justify-center items-center xl:h-full">
             <ToastContainer />
-            <form onSubmit={handleSubmit} className="bg-[rgba(197,197,197,0.96)] flex flex-col w-[94%] h-[90%] sm:h-[86%] sm:w-[80%] rounded-[10px] p-4 gap-2 md:h-[92%] lg:h-[92%] xl:h-[66%] md:max-w-[700px] 2xl:h-[70%]">
+            <form onSubmit={handleSubmit} className="bg-[rgba(197,197,197,0.96)] overflow-hidden flex flex-col w-[94%] h-[90%] sm:h-[86%] sm:w-[80%] rounded-[10px] p-4 gap-2 md:h-[92%] lg:h-[92%] xl:h-[66%] md:max-w-[700px] 2xl:h-[70%]">
                 <div className=" flex flex-row gap-6 text-sm md:text-lg w-full xl:text-xl">
                     <div className="flex flex-col flex-grow">
                         <label htmlFor="input" className=" w-max bg-none text-sm md:text-lg xl:text-xl text-black">Nombre</label>
@@ -154,7 +154,7 @@ export default function FormContact(){
                         type="text" 
                         name="message" 
                         value={input.message} 
-                        className=" w-full h-[70px] sm:h-[100px] md:h-[90px] rounded-lg pl-2 pt-1  text-start border-2 border-primaryColor xl:h-[190px] "
+                        className=" w-full h-[70px] sm:h-[100px] md:h-[90px] rounded-lg pl-2 pt-1  text-start border-2 border-primaryColor xl:h-[220px] 2xl:h-[190px] "
                         placeholder="Ingrese un mensaje aquí..."
                         onChange={(event) => handleInputChange(event)}
                         />
