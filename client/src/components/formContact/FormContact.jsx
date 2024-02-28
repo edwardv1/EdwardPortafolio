@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import validationInputs from "./validationInputs.js";
 import validationSend from "./validationSend.js";
 import ButtonSend from "./ButtonSend.jsx";
@@ -115,64 +115,64 @@ export default function FormContact(){
     };
 
     return(
-        <div class="h-1/2 w-full flex justify-center items-center xl:h-full">
+        <div className="h-1/2 w-full flex justify-center items-center xl:h-full">
             <ToastContainer />
-            <form onSubmit={handleSubmit} class="bg-[rgba(197,197,197,0.96)] flex flex-col w-[94%] h-[90%] sm:h-[86%] sm:w-[80%] rounded-[10px] p-4 gap-2 md:h-[92%] lg:h-[92%] xl:h-[66%] md:max-w-[700px] 2xl:h-[70%]">
+            <form onSubmit={handleSubmit} className="bg-[rgba(197,197,197,0.96)] flex flex-col w-[94%] h-[90%] sm:h-[86%] sm:w-[80%] rounded-[10px] p-4 gap-2 md:h-[92%] lg:h-[92%] xl:h-[66%] md:max-w-[700px] 2xl:h-[70%]">
                 <div className=" flex flex-row gap-6 text-sm md:text-lg w-full xl:text-xl">
-                    <div class="flex flex-col flex-grow">
-                        <label for="input" class=" w-max bg-none text-sm md:text-lg xl:text-xl text-black">Nombre</label>
+                    <div className="flex flex-col flex-grow">
+                        <label htmlFor="input" className=" w-max bg-none text-sm md:text-lg xl:text-xl text-black">Nombre</label>
                         <input 
                         type="text" 
                         name="name" 
                         value={input.name} 
-                        class=" w-full rounded-lg pl-2 border-2 border-primaryColor h-[30px] 2xl:h-[35px]"
+                        className=" w-full rounded-lg pl-2 border-2 border-primaryColor h-[30px] 2xl:h-[35px]"
                         placeholder="Ingrese su nombre..."
                         onChange={(event) => handleInputChange(event)}
                         />
-                        <section class="min-h-[20px] md:min-h-[28px] text-[12px] xs:text-sm md:text-lg ">
-                            {errors.name ? <p class="md:pl-1 text-red-600 ">{errors.name}</p> : null}
+                        <section className="min-h-[20px] md:min-h-[28px] text-[12px] xs:text-sm md:text-lg ">
+                            {errors.name ? <p className="md:pl-1 text-red-600 ">{errors.name}</p> : null}
                         </section>
                     </div>
-                    <div class="flex flex-col flex-grow">
-                        <label for="input" class=" w-max bg-none text-sm md:text-lg xl:text-xl text-black">Correo electrónico</label>
+                    <div className="flex flex-col flex-grow">
+                        <label htmlFor="input" className=" w-max bg-none text-sm md:text-lg xl:text-xl text-black">Correo electrónico</label>
                         <input 
                         type="email" 
                         name="email" 
                         value={input.email} 
-                        class=" w-full rounded-lg pl-2 border-2 border-primaryColor h-[30px] 2xl:h-[35px]"
+                        className=" w-full rounded-lg pl-2 border-2 border-primaryColor h-[30px] 2xl:h-[35px]"
                         placeholder="Ingrese su email..."
                         onChange={(event) => handleInputChange(event)}
                         />
-                        <section class="min-h-[20px] md:min-h-[28px] xs:text-sm  text-[12px] md:text-lg">
-                            {errors.email ? <p class="md:pl-1 text-danger-600">{errors.email}</p> : null}
+                        <section className="min-h-[20px] md:min-h-[28px] xs:text-sm  text-[12px] md:text-lg">
+                            {errors.email ? <p className="md:pl-1 text-danger-600">{errors.email}</p> : null}
                         </section>
                     </div>
                 </div>
-                <div class="flex flex-col text-black text-sm md:text-lg xl:text-xl">
-                    <label for="input" class=" w-max bg-none text-sm md:text-lg xl:text-xl text-black">Mensaje</label>
+                <div className="flex flex-col text-black text-sm md:text-lg xl:text-xl">
+                    <label htmlFor="input" className=" w-max bg-none text-sm md:text-lg xl:text-xl text-black">Mensaje</label>
                     <textarea 
                         type="text" 
                         name="message" 
                         value={input.message} 
-                        class=" w-full h-[70px] sm:h-[100px] md:h-[90px] rounded-lg pl-2 pb-12 sm:pb-14 text-start border-2 border-primaryColor xl:h-[190px] xl:pb-36"
+                        className=" w-full h-[70px] sm:h-[100px] md:h-[90px] rounded-lg pl-2 pt-1  text-start border-2 border-primaryColor xl:h-[190px] "
                         placeholder="Ingrese un mensaje aquí..."
                         onChange={(event) => handleInputChange(event)}
                         />
-                        <section class="min-h-[20px] text-[12px] xs:text-sm md:text-lg md:min-h-[28px]">
+                        <section className="min-h-[20px] text-[12px] xs:text-sm md:text-lg md:min-h-[28px]">
                         {errors.message ? (
-                            <p class="md:pl-1 text-danger-600">{errors.message}</p>
+                            <p className="md:pl-1 text-danger-600">{errors.message}</p>
                             ) : (
                             input.message && !errors.message ? (
-                                <p class="md:pl-1 text-lime-600">{`Máximo de 1000 carácteres (${input.message.length}/1000)`}</p>
+                                <p className="md:pl-1 text-lime-600">{`Máximo de 1000 carácteres (${input.message.length}/1000)`}</p>
                             ) : null
                         )}
                         </section>
                 </div>
-                <div class="flex justify-center items-center">
+                <div className="flex justify-center items-center">
                     { disable? 
                     (
                     <ButtonSend
-                    class="text-sm"
+                    className="text-sm"
                     type="submit"
                     onClick={(event) => handleSubmit(event)}
                     />

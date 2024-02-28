@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import logoE from "../../assets/LetraE.png";
 import styles from "./Header.css";
 import OptionsNavSup from "../../components/headerComponents/OptionsNavSup";
@@ -36,7 +36,7 @@ export default function Header ({handleSidebarVisibility}){
 
     return(
         <nav className={`fixed top-0 z-50 w-[100vw] py-6 m-auto px-10 text-base font-base items-center ${navClass}`}>
-            <div class="flex justify-between">
+            <div className="flex justify-between">
                 <div className=" flex justify-around items-center" >
                     <img src={logoE} width="28" alt="logo" className=" md:mr-8 mdMiddle:mr-0" />
                     <p className=" ml-2 w-[156px] text-white font-mono md:text-lg md:hidden mdMiddle:block xl:text-xl">Edward Vera</p>
@@ -52,10 +52,10 @@ export default function Header ({handleSidebarVisibility}){
                       checked={checkboxChecked}
                       onChange={() => setCheckboxChecked(!checkboxChecked)}
                     />
-                    <label class="toggle bg-none" for="checkbox" >
-                        <div id="bar1" class="bars" ></div>
-                        <div id="bar2" class="bars"></div>
-                        <div id="bar3" class="bars"></div>
+                    <label className="toggle bg-none" htmlFor="checkbox" >
+                        <div id="bar1" className="bars" ></div>
+                        <div id="bar2" className="bars"></div>
+                        <div id="bar3" className="bars"></div>
                     </label>
                 </div>
                 {/* Navbar Lateral para Small Devices */}
