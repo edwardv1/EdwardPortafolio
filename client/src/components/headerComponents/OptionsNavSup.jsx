@@ -6,7 +6,7 @@ export default function OptionsNavSup() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
+      const scrollPosition = window.scrollY + 200; //+200 Para que tome el estilo de la seccion Contacto y no se quede en Timeline
       // Obtengo las posiciones correctas para cada sección
       const sectionsData = [
         { id: 'Inicio', offset: document.getElementById('Inicio').offsetTop },
