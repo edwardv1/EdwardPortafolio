@@ -47,6 +47,18 @@ let timelineElements = [
         href: "https://www.linkedin.com/feed/update/urn:li:activity:7124903444070424576/",
         target: "_blanck"
     },
+    {
+        id: 5,
+        title: "Backend Developer - SpaceGuru",
+        location: "Argentina",
+        description:
+        "Implementar soluciones mediante programación. Mantener los servicios/aplicaciones. Desarrollar nuevas funcionalidades sobre los servicios/aplicaciones.",
+        buttonText: "Ver Empresa",
+        date: "marzo 2024 - actualmente",
+        icon: "work",
+        href: "https://www.spaceguru.com.ar/",
+        target: "_blanck"
+    },
 ]
 
 export default timelineElements;

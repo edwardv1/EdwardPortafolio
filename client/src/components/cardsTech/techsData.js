@@ -8,6 +8,7 @@ import Html from "../../assets/techs/Html.png";
 import Primereact from "../../assets/techs/Primereact.png";
 import Tailwind from "../../assets/techs/Tailwind.png";
 import Nodejs from "../../assets/techs/Nodejs.png";
+import Golang from "../../assets/techs/Golang.png";
 import Express from "../../assets/techs/Express.png";
 import JWT from "../../assets/techs/JWT.png";
 import Sequelize from "../../assets/techs/Sequelize.png";
@@ -87,6 +88,11 @@ const arrayCardsTech = [
     //     image: Bootstrap,
     //     name: "Bootstrap",
     // },
+    {
+        image: Golang,
+        name: "Golang",
+        description:"Go es un lenguaje de programación concurrente y compilado, diseñado para la eficiencia y conocido por su excelente desempeño en la creación de servidores."
+    },
     {
         image: Nodejs,
         name: "Node.js",
