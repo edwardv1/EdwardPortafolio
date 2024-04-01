@@ -1,0 +1,68 @@
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.date {
+  color: #ffffff;
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+  font-size: 14.8px;
+}
+
+.containerButton {
+  display: inline-block;
+  transform-origin: center; 
+  transition: transform 0.2s;
+}
+.containerButton:active {
+  transform: scale(0.95);
+}
+.buttonTimeLine {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+  transition: transform 0.2s;
+}
+.workButton {
+  background: linear-gradient(304deg, rgba(19,149,150,1) 0%, rgba(89,203,68,1) 100%);
+}
+.workButton:hover{
+   background-position: right center;
+}
+.educationButton {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(92, 130, 255) 0%, rgb(82, 201, 225) 100%);
+}
+.educationButton:hover {
+  background-position: right center;
+}
+
+.workButton,
+.educationButton {
+  background-size: 200% auto; 
+  transition: background-position 0.5s;
+}
+
+@media only screen and (max-width: 1169px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #description {
+    font-size: 16px;
+  }
+}
+/* @media only screen and (min-width: 1170px) {
+  .date {
+    color: rgb(92, 130, 255);
+  }
+} */
