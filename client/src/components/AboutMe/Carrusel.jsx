@@ -77,7 +77,7 @@ export default function Carrusel(){
             <p className="pt-2 pb-5 xs:pb-0 text-[13.5px] xs:text-[15px] sm:pt-[8px] sm:text-[15px] md:pb-[86px] md:pt-[16px] md:text-xl lg:pt-4 lg:pb-5 lg:text-[22px] xl:hidden text-justify">
               En el año 2020 di mis primeros pasos en el mundo de la tecnología al iniciar la carrera de Ingeniería en Informática.  
               En mis dias como estudiante se afanciaba cada vez mas mi interés por la tecnología, y sobre todo por la programación, por lo que decidí
-              participar en un bootcamp intensivo en donde aprendí las bases técnicas para ser un Desarrollador Web Fullstack.
+              participar en un bootcamp intensivo en donde aprendí las bases técnicas para ser un Desarrollador Web FullStack.
             </p>
             <ul className=" hidden xl:block xl:text-[23px] xl:pt-[24px] 2xl:pt-[18px] text-justify">
               <li>
@@ -88,7 +88,7 @@ export default function Carrusel(){
               En el año 2020 di mis primeros pasos en el mundo de la tecnología al iniciar la carrera de Ingeniería en Informática,
               aunque mi interés por la misma habia nacido hace muchos años atrás. 
               En mis días como estudiante se afanciaba cada vez mas mi interés por la tecnología, y sobre todo por la programación, por lo que decidí
-              participar en un bootcamp intensivo en donde aprendí las bases técnicas para ser un Desarrollador Web Fullstack.
+              participar en un bootcamp intensivo en donde aprendí las bases técnicas para ser un Desarrollador Web FullStack.
               </li>
             </ul>
           </div>
