@@ -116,7 +116,8 @@ const arrayProyects = [
             },
         ],
         date: "07/2023",
-        pageURL: "https://pokemon-pi-sable.vercel.app/",
+        //pageURL: "https://pokemon-pi-sable.vercel.app/",
+        pageURL: null,
         githubURL: "https://github.com/edwardv1/PokemonPI",
     },
 ]
